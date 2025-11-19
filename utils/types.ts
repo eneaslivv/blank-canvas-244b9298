@@ -75,7 +75,7 @@ export interface OrderItem {
 }
 
 export interface Order {
-    id: string;
+    id: number | string;
     user_id: string;
     user_name: string;
     total_amount: number;
@@ -153,6 +153,5 @@ export interface TenantModule {
     app_id: string;
     enabled: boolean;
     activated_at: string | null;
-    created_at: string;
     apps_registry?: AppsRegistry | null;
 }
